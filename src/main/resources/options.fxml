@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="360.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.windows.OptionsController">
+   <children>
+      <Button fx:id="saveButton" layoutX="194.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#onSaveButtonClicked" prefHeight="25.0" text="Save" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="10.0" />
+      <ScrollPane AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <content>
+            <GridPane fx:id="gridPane" alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="137.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="92.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="133.0" text="News Switch Intervals [s]" textAlignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="2.0" />
+                     </GridPane.margin></Label>
+                  <TextField fx:id="intervalTextField" alignment="CENTER" promptText="seconds" GridPane.columnIndex="1" />
+                  <Separator prefWidth="200.0" GridPane.rowIndex="1" />
+                  <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Separator layoutY="323.0" prefWidth="250.0" AnchorPane.bottomAnchor="35.0" />
+   </children>
+</AnchorPane>
