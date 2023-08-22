@@ -3,7 +3,7 @@ This is News ticker program using JavaFX
 
 ## Video presentation
 
-(https://youtu.be/C-8BCaO9EAE)
+https://youtu.be/C-8BCaO9EAE
 
 ## Adding new websites
 If you want to add your custom site to list you need to:  
